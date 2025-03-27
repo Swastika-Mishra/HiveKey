@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.background{
+    background-image: url('../../assets/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg');
+    height: 150vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* opacity: 0.6; */
+}
+.company-logo-overlay{
+    position: absolute;
+    float: left;
+    color: black;
+    top: 20%;
+    left: 10%;
+}
+.login-signup-box-overlay{
+    height: 80vh;
+    width: 40vw;
+    background-color: azure;
+    position: absolute;
+    opacity: 0.7;
+    padding: 20px;
+    top: 8%;
+    right: 10%;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: left;
+}
+
+span{
+    display: inline-flex;
+    margin: 5px;
+}
+.email-login{
+    padding: 10px;
+    border-radius: 5px;
+    border-color: azure;
+    width: 90%;
+    z-index: 999;
+}
+#submit-login{
+    float: right;
+    background-color: dodgerblue;
+    color: aliceblue;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border-color: whitesmoke;
+    z-index: 999;
+}
+
+.first{
+    background-color: black;
+    height: 80vh;
+    display: flex;
+}
+
+.first-left{
+    height: 100%;
+    width: 60%;
+    /* padding: 20px; */
+    color: white;
+    /* top: 50%; */
+    margin-top: 10%;
+    text-align: left;
+    margin-left: 5%;
+}
+
+#cat{
+    right: 0px;
+    width: 40%;
+}
