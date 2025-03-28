@@ -7,7 +7,6 @@ nav{
     display: flex;
     flex-direction: row;
     padding: 10px;
-    gap: 73%;
     align-items: center;
 }
 
@@ -21,4 +20,10 @@ nav{
     padding: 10px;
     border-radius: 15px;
     width: 100px;
+}
+.auth{
+    gap: 73%;
+}
+.non-auth{
+    gap: 82%;
 }

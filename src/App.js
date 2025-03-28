@@ -6,7 +6,7 @@ import Home from './components/home/Home';
 import { useAuth0 } from "@auth0/auth0-react";
 import Dashboard from './components/dashboard/Dashboard';
 import Layout from './components/Layout';
-import Signup from './components/signup/Signup';
+import Profile from './components/profile/Profile';
 
 const App = () => {
   const {isAuthenticated, isLoading } = useAuth0();
@@ -19,6 +19,7 @@ const App = () => {
           element={
             isLoading ? (<div>Loading...</div>) : isAuthenticated ? (<Dashboard />) : (<Navigate to="/" />)
           } />
+          <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
     </div>
