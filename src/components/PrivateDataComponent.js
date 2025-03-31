@@ -10,7 +10,7 @@ const PrivateDataComponent = () => {
                 const token = await getAccessTokenSilently({
                     audience: "https://hivekey-api",
                 });
-                const response = await fetch("http://localhost:8081/api/private", {
+                const response = await fetch("https://my-backend-daoc.onrender.com/api/private", {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 const data = await response.json();
