@@ -28,3 +28,6 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+process.env
+tests/auth.json
