@@ -61,6 +61,7 @@ const Profile = () => {
           <strong>Nickname</strong>
           <br />
           <input
+            name="Nickname"
             id="nickname"
             type="text"
             value={nickname}
@@ -93,6 +94,7 @@ const Profile = () => {
 
           {/* Save Button */}
           <button
+            name="Save Profile"
             onClick={saveProfile}
             style={{
               marginTop: "15px",

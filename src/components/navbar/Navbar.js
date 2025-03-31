@@ -9,6 +9,7 @@ const LoginButton = () => {
   return (
     <button
       id="auth_button"
+      name="Login"
       onClick={() =>
         loginWithRedirect({
           redirectUri: window.location.origin + "/dashboard",
@@ -25,6 +26,7 @@ const LogoutButton = () => {
   return (
     <button
       id="auth_button"
+      name="Logout"
       onClick={() =>
         logout({ logoutParams: { returnTo: window.location.origin } })
       }
@@ -39,7 +41,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav className={isAuthenticated ? "auth": "non-auth"}>
-      <h2 style={{margin: "5px",cursor: "pointer"}} onClick={() => isAuthenticated ? navigate("/dashboard") : navigate("/")}>HiveKey</h2>
+      <h2 name="HiveKey" style={{margin: "5px",cursor: "pointer"}} onClick={() => isAuthenticated ? navigate("/dashboard") : navigate("/")}>HiveKey</h2>
       <div className="auth-nav">
         {isAuthenticated &&
           <button
@@ -58,6 +60,7 @@ const Navbar = () => {
         }
         {isAuthenticated && 
           <button
+            name="Profile"
             style={{
               background: "white",
               color: "black",
