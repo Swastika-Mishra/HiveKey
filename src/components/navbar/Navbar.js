@@ -3,6 +3,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import "./Navbar.css";
 import Notification from "../../assets/notification.png";
 import { useNavigate } from "react-router-dom";
+import HiveKey from "../../assets/HiveKey.png";
+import logo from "../../assets/bee_5230138.png";
 
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
@@ -41,7 +43,11 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav className={isAuthenticated ? "auth": "non-auth"}>
-      <h2 name="HiveKey" style={{margin: "5px",cursor: "pointer"}} onClick={() => isAuthenticated ? navigate("/dashboard") : navigate("/")}>HiveKey</h2>
+      <div style={{display: "flex"}}>
+      <img name="logo" src={logo} style={{margin: "5px",height: "30px", width: "30px", rotate: "30deg"}}/>
+      <img name="HiveKey" src={HiveKey} style={{margin: "5px",cursor: "pointer"}} onClick={() => isAuthenticated ? navigate("/dashboard") : navigate("/")} />
+      {/* <h2 name="HiveKey" style={{margin: "5px",cursor: "pointer"}} onClick={() => isAuthenticated ? navigate("/dashboard") : navigate("/")}>HiveKey</h2> */}
+      </div>
       <div className="auth-nav">
         {isAuthenticated &&
           <button
